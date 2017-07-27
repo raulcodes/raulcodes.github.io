@@ -1,0 +1,14 @@
+html {
+  background-color: #22215b;
+  /*background-color: white;*/
+}
+
+.image {
+  width: 100%;
+}
+
+.gradient {
+  margin: auto;
+  height: 500px;
+  width: 1000px;
+}
