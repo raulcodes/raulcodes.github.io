@@ -1,14 +1,47 @@
 html {
   background-color: #22215b;
-  /*background-color: white;*/
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
 }
 
 .image {
   width: 100%;
 }
 
+.header {
+  height: 100px;
+}
+
 .gradient {
   margin: auto;
-  height: 500px;
-  width: 1000px;
+  height: 400px;
+  width: 900px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: #bbb9ea;
+  height: 100px;
+}
+
+.clickable {
+  position: relative;
+  margin: auto;
+  height: 116px;
+  width: 300px;
+}
+
+.frame {
+  top: 50%;
+}
+
+.frame:hover {
+  cursor: pointer;
+}
+
+.faq {
+  width: 300px;
 }
