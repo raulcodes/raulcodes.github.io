@@ -16,6 +16,7 @@ h1 {
 
 .logo {
   margin: -5px;
+  max-width: 105%;
 }
 
 .gradient {
