@@ -1,0 +1,87 @@
+html {
+  background-color: #22215b;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+}
+
+.image {
+  width: 100%;
+}
+
+.header {
+  height: 100px;
+}
+
+.logo {
+  margin: -5px;
+}
+
+.gradient {
+  margin: auto;
+  height: 400px;
+  width: 850px;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: #bbb9ea;
+  height: 100px;
+}
+
+.sponsorship {
+  width: 250px;
+  height: 120px;
+  background: lightgray;
+  position: relative;
+  margin: 20px;
+}
+
+div.bottom {
+  width: 205px;
+  height: 8px;
+  background: linear-gradient(135deg, red, purple);
+  position: absolute;
+  bottom: -8px;
+  left: 46px;
+  border-radius: 5px;
+}
+
+div.top {
+  width: 175px;
+  height: 8px;
+  background: linear-gradient(135deg, yellow, red);
+  position: absolute;
+  bottom: 92px;
+  left: 76px;
+  border-radius: 5px;
+}
+
+div.left {
+  width: 8px;
+  height: 80px;
+  background: linear-gradient(135deg, yellow, red);
+  position: absolute;
+  bottom: -8px;
+  left: 46px;
+  border-radius: 5px;
+}
+
+div.right {
+  width: 8px;
+  height: 108px;
+  background: linear-gradient(135deg, red, purple);
+  position: absolute;
+  bottom: -8px;
+  left: 243px;
+  border-radius: 5px;
+}
+
+h1.sponsor {
+  font-size: 2rem;
+  color: linear-gradient(135deg, purple, yellow);
+  width: 100px;
+  left: 50px;
+}
