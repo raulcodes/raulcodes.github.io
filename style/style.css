@@ -91,7 +91,6 @@ h1.sponsor {
 	background: linear-gradient(left, #ffaa3a, #ff0b63);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-  width: 100px;
   left: 60px;
   top: 15px;
 }
