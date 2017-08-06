@@ -6,6 +6,10 @@ h1 {
   font-family: "Varela Round", sans-serif;
 }
 
+section.hero {
+  background-color: #22215b;
+}
+
 .image {
   width: 100%;
 }
