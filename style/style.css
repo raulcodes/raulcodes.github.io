@@ -10,14 +10,6 @@ section.hero {
   background-color: #22215b;
 }
 
-.image {
-  width: 100%;
-}
-
-.header {
-  height: 100px;
-}
-
 .logo {
   margin: -25px;
   max-width: 105%;
