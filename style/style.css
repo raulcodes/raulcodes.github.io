@@ -1,3 +1,5 @@
+html, body { overflow: none !important; overflow-x: none !important; overflow-y: none !important; }
+
 html {
   background-color: #22215b;
 }
