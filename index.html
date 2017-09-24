@@ -1,65 +1,85 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0 user-scalable=no">
-  <meta name="theme-color" content="#FFAA3A">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="style/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <title>HackTX 2017</title>
-</head>
+  <head>
 
-<body>
-  <!--<section class="hero is-fullheight">
-    <div class="hero-body">
-      <div class="container">
-        <div class="gradient">
-          <img class="logo" src="assets/h17.png"></img>
-        </div>
-        <div class="title has-text-centered">
-          <h1>Coming October 28-29</h1>
-        </div>
-        <div class="buttons">
-          <div class="sponsorship">
-            <i class="fa fa-handshake-o sponsor-icon"></i>
-            <h1 class="sponsor">SPONSOR</h1>
-            <div class="bottom"></div>
-            <div class="left"></div>
-            <div class="top"></div>
-            <div class="right"></div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fear Pong</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-block">
+              <h3 class="card-title">Dare</h4>
+              <p class="card-text">Click for a new dare!</p>
+            </div>
           </div>
         </div>
       </div>
-  </section>-->
-  <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="inner cover">
-            <div class="header"></div>
-            <div class="gradient">
-              <img class="logo" src="assets/h17.png"></img>
-            </div>
-            <h1 class="title">Coming October 28-29</h1>
-            <div class="sponsorship">
-              <i class="fa fa-handshake-o sponsor-icon"></i>
-              <h1 class="sponsor">SPONSOR</h1>
-              <div class="bottom"></div>
-              <div class="left"></div>
-              <div class="top"></div>
-              <div class="right"></div>
-            </div>
+      <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2 col-">
+          <button id="dare" class="btn btn-danger">
+              Click for a new Dare
+          </button>
         </div>
       </div>
     </div>
-</body>
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
 
+        const dares = ["Text any ex: heyyyy ;-)",
+          "Switch clothes with partner",
+          "Suck on partner’s big toe",
+          "The other team gets to draw on the other teams faces",
+          "Kiss the other partner on the lips",
+          "Post on facebook or twitter “Michael Jackson was black ??!!!”",
+          "One of the partners has to play in their underwear for 5 turns",
+          "Write on the hand that you masturbate most with : “I masturbated with this hand”",
+          "Answer This: If you had to have sex with one animal, what one would it be and why?",
+          "Lick a toilet bowl",
+          "tell me something you don't want me to know",
+          "Answer This: What is the weirdest thing you've masturbated to?",
+          "I dare you to 'like' a girl/guy's photo on Facebook that is at least 2 years old.",
+          "Both of you have to do the dare that the other team does or drink if they choose to drink",
+          "comment on a facebook picture of an acquaintance. Only thing was, the picture had to be from 4 years ago and they could never explain to them it was a dare. ",
+          "who would you pay the most money to sleep with, and who would you charge the most to sleep with?",
+          "Spank you’re teammate ",
+          "Take a shot with a chaser, but your opponet can choose ANY chaser, (water, pickle juice, soy sauce, etc)",
+          "Let your opponent undress you to your underwear",
+          "Touch noises with your partner and stear deeply 30sec",
+          "Tell your partner or opponent their most attract AND unattractive feature",
+          "Foot message for 30sec",
+          "Body shot" ];
 
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+      }
 
-<script src="js/gradient.js"></script>
-<script src="js/script.js"></script>
+      var newDare = function() {
+        var i = getRandomInt(0, dares.length);
+        $('.card-text').html(dares[i]);
+      }
+
+      $('#dare').on('click', newDare);
+    </script>
+
+  </body>
+
 </html>

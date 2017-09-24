@@ -1,0 +1,31 @@
+body {
+  padding-top: 54px;
+  background-color: #42A5F5;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+}
+
+.card-block {
+  text-align: center;
+  padding: 10px;
+}
+
+#dare {
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media (min-width: 302px) {
+  body {
+    padding-top: 56px;
+  }
+  #dare {
+    width: 100%;
+  }
+}
